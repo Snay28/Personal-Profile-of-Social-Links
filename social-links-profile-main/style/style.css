@@ -1,0 +1,108 @@
+:root {
+  --color-primario: #c5f82a;
+  --color-secundario: #333333;
+  --color-terciario: #141414;
+  --color-cuaternario: #1f1f1f;
+  --color-quintenario: #ffffff;
+}
+
+
+/* Stylos Generales */
+
+html {
+  font-size: 62.5%;
+ 
+}
+
+body {
+  font-size: 1.5rem; /* 1rem = 10px */
+  height: 100vh; 
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-terciario);
+  font-family: "Inter", serif;
+}
+
+h1,
+p {
+  color: var(--color-quintenario);
+}
+
+/* Stylos Generales end */
+
+
+/* .contenedor */
+
+.contenedor {
+  background-color: var(--color-cuaternario);
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 4rem;
+  border-radius: 2rem;
+  font-size: 1.3rem;
+}
+
+@media (min-width: 480px) {
+    .contenedor {
+        width: 29rem;
+    }
+}
+
+.contenedor img {
+  border-radius: 50%;
+  width: 9rem;
+  height: 9rem;
+}
+
+.contenedor h1 {
+  margin: 2rem auto 5px auto;
+  font-weight: 400;
+  font-size: 2.2rem;
+}
+
+.contenedor span {
+  color: var(--color-primario);
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+.contenedor p {
+  margin-top: 0.3rem;
+}
+
+/* .contenedor end */
+
+/* .enlaces-sociales */
+
+.enlaces-sociales {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.enlaces-sociales .items {
+  width: 100%;
+  padding: 1.3rem;
+  background-color: #333333;
+  margin: 0.6rem;
+  text-align: center;
+  border-radius: 1rem;
+  color: var(--color-quintenario);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.enlaces-sociales .items:hover {
+  background-color: var(--color-primario);
+  color: #141414;
+}
+
+/* .enlaces-sociales end */
